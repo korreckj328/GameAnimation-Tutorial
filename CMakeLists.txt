@@ -30,6 +30,7 @@ add_subdirectory(bullet3)
 include_directories("${CMAKE_SOURCE_DIR}/glfw/include")
 include_directories("${CMAKE_SOURCE_DIR}/stb")
 include_directories("${CMAKE_SOURCE_DIR}/glm")
+include_directories("${CMAKE_SOURCE_DIR}/cgltf")
 include_directories("${CMAKE_SOURCE_DIR}/bullet3/src")
 include_directories("${CMAKE_SOURCE_DIR}/freetype/include")
 
