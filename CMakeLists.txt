@@ -49,6 +49,7 @@ target_link_libraries(${PROJECT_NAME} glm)
 target_link_libraries(${PROJECT_NAME} BulletDynamics BulletCollision LinearMath)
 target_link_libraries(${PROJECT_NAME} freetype)
 link_directories("${CMAKE_SOURCE_DIR}/stb")
+link_directories("${CMAKE_SOURCE_DIR}/cgltf")
 
 
 set (source "${CMAKE_SOURCE_DIR}/Assets")

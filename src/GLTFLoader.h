@@ -4,7 +4,7 @@
 
 #ifndef GAMEANIMATION_TUT_GLTFLOADER_H
 #define GAMEANIMATION_TUT_GLTFLOADER_H
-
+#define CGLTF_IMPLEMENTATION
 #include <cgltf.h>
 
 
