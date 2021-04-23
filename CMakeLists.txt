@@ -35,9 +35,11 @@ include_directories("${CMAKE_SOURCE_DIR}/bullet3/src")
 include_directories("${CMAKE_SOURCE_DIR}/freetype/include")
 
 file(GLOB PROJECT_SOURCES src/*.h
-                          src/*.cpp)
+                          src/*.cpp
+                          src/Animation/*.h
+                          src/Animation/*.cpp)
 
-add_executable(${PROJECT_NAME} ${PROJECT_SOURCES})
+add_executable(${PROJECT_NAME} ${PROJECT_SOURCES} src/Animation/Frame.h)
 
 if (NOT APPLE) 
         target_link_libraries(${PROJECT_NAME} OpenGL)
