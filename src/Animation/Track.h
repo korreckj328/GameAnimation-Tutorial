@@ -5,6 +5,11 @@
 #ifndef GAMEANIMATION_TUT_TRACK_H
 #define GAMEANIMATION_TUT_TRACK_H
 
+#include <vector>
+#include "Frame.h"
+#include "Interpolation.h"
+#include <glm/glm.hpp>
+
 template<typename T, int N>
 class Track {
 protected:
@@ -30,6 +35,6 @@ public:
 };
 
 typedef Track<float, 1> ScalarTrack;
-typedef Track<vec3, 3> VectorTrack;
-typedef Track<quat, 4> QuaternionTrack;
+typedef Track<glm::vec3, 3> VectorTrack;
+typedef Track<glm::quat, 4> QuaternionTrack;
 #endif //GAMEANIMATION_TUT_TRACK_H
